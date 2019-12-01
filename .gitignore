@@ -1,3 +1,13 @@
+*.html
+*.jar
+*.iml
+*.swp
+*/generated/
+node_modules/
+package-lock.json
+venvs/
+docs/
+
 # Compiled class file
 *.class
 
