@@ -1,6 +1,6 @@
 # try-openapi-generator-cli
 
-Sample repository to run openopenapi-generator-cli.jar to generate code/docs/schemas/configs
+Sample repository to run openapi-generator-cli.jar to generate code/docs/schemas/configs
 
 ## TL;DR
 
