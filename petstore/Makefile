@@ -18,7 +18,7 @@ ifeq ($(generator_name),)
 	@echo "# e.g.) make build generator_name=python"
 else
 	@echo "generator_name=$(generator_name)"
-	java -jar $(GENERATOR_JAR) generate --input-spec $(SPEC_FILE) --output $(GENERATED_SOURCE_DIR)/$(generator_name) --generator-name $(generator_name)
+	java -jar $(GENERATOR_JAR) generate --skip-validate-spec --input-spec $(SPEC_FILE) --output $(GENERATED_SOURCE_DIR)/$(generator_name) --generator-name $(generator_name)
 endif
 
 build: clean generate
