@@ -6,29 +6,40 @@ Sample repository to run openopenapi-generator-cli.jar to generate code/docs/sch
 
 ### generate source
 
-Run `build` target with `generator_name` option. To generate `python` client is like this.
+Run `build` target with `generator_name` option. To generate `go` client is like this.
 
 ```bash
-$ make build generator_name=python
+$ make build generator_name=go
 ```
 
-openapi-generator made `generated/python` into each directories and the source code will be put.
+openapi-generator made `generated/go` into each directories and the source code will be put.
 
 ```
 $ tree -L 2 petstore/generated/
 petstore/generated/
-└── python
+└── go
     ├── README.md
+    ├── api
+    ├── api_pet.go
+    ├── api_store.go
+    ├── api_user.go
+    ├── client.go
+    ├── configuration.go
     ├── docs
     ├── git_push.sh
-    ├── openapi_client
-    ├── requirements.txt
-    ├── setup.py
+    ├── go.mod
+    ├── go.sum
+    ├── model_api_response.go
+    ├── model_category.go
+    ├── model_order.go
+    ├── model_pet.go
+    ├── model_tag.go
+    ├── model_user.go
+    ├── response.go
     ├── test
-    ├── test-requirements.txt
-    └── tox.ini
+    └── utils.go
 
-4 directories, 6 files
+4 directories, 17 files
 ```
 
 you can confirm generator names in [generators](https://openapi-generator.tech/docs/generators.html).
@@ -66,5 +77,5 @@ curl -L http://central.maven.org/maven2/org/openapitools/openapi-generator-cli/4
 To generate particular schema, specify the directory name with `generator_name` option.
 
 ```bash
-$ make petstore generator_name=python
+$ make petstore generator_name=go
 ```
