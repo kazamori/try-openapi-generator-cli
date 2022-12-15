@@ -52,12 +52,11 @@ Run `doc` target to generate the API documentation into `docs` directory.
 $ make doc
 ```
 
-[openapi-ext-tools](https://github.com/t2y/openapi-ext-tools) bundles multiple openapi spec files into single yaml file. Then create single static html by [redoc-cli](https://github.com/Redocly/redoc/tree/master/cli).
+Create single static html by [redoc-cli](https://github.com/Redocly/redoc/tree/main/cli).
 
 ```bash
 $ tree docs
 docs
-├── petstore.yaml
 └── petstore_doc.html
 ```
 
